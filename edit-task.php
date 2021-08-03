@@ -30,7 +30,6 @@ if (isset($_POST["update"])){
 <?php include("includes/header.php")?>
 <div class="container p-4">
   <div class="row">
-    <div class="col-md-4 mx-auto">
       <div class="card card-body">
 
       <form action="edit-task.php?id=<?php echo $_GET['id']; ?>" method="POST">
@@ -39,14 +38,14 @@ if (isset($_POST["update"])){
         </div>
         <div class="form-group">
         <textarea name="description" class="form-control" cols="30" rows="10"><?php echo $description;?></textarea>
-        </div>
-        <button class="btn btn-success" name="update">
-          Update
-      </button>
+       </div>
+          <button class="btn btn-success mt-2 w-25" name="update">
+            Update
+          </button>
       </form>
 
       </div>
     </div>
   </div>
-</div>
+
 <?php include("includes/footer.php")?>

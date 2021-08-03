@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="col-md-8">
-      <table class="table table-bordered">
+      <table class="table table-bordered tabla">
         <thead>
           <tr>
             <th>Title</th>
@@ -44,14 +44,14 @@ $resultTasks = mysqli_query($conn,$query);
 
 while($row = mysqli_fetch_array($resultTasks)){?>
 <tr>
-            <td><?php echo $row["title"] ?></td>
-            <td><?php echo $row["description"] ?></td>
-            <td><?php echo $row["created-at"] ?></td>
-            <td>
-                <a class="btn btn-primary" href="edit-task.php?id=<?php echo $row["id"]?>">
+            <td class="form-title"><p><?php echo $row["title"] ?></p></td>
+            <td class="form-desc"><p><?php echo $row["description"] ?></p></td>
+            <td class="form-created"><p><?php echo $row["created-at"] ?></p></td>
+            <td class="form-botones">
+                <a class="btn btn-primary botones" href="edit-task.php?id=<?php echo $row["id"]?>">
                   <i class="fas fa-marker"></i>
                 </a>
-                <a class="btn btn-danger" href="delete-task.php?id=<?php echo $row["id"]?>">
+                <a class="btn btn-danger botones" href="delete-task.php?id=<?php echo $row["id"]?>">
                 <i class="far fa-trash-alt"></i>
                 </a>
            

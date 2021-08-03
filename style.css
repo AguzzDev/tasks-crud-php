@@ -1,0 +1,23 @@
+.tabla{
+width: 100%;
+white-space: wrap;
+word-break: break-all;
+}
+.form-title{
+    width: 20%;
+}
+.form-desc{
+    width: 50%;
+}
+.form-created{
+    width: 20%;
+}
+.form-botones{
+    width: 10%;
+}
+.botones{
+margin-top: 5px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
